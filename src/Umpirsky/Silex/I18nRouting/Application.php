@@ -11,12 +11,14 @@
 
 namespace Umpirsky\Silex\I18nRouting;
 
+use Silex\Application as BaseApplication;
+
 /**
  * Overrides mount in order to translate prefixes.
  *
  * @author Саша Стаменковић <umpirsky@gmail.com>
  */
-class Application extends Silex\Application
+class Application extends BaseApplication
 {
     public function mount($prefix, $app)
     {

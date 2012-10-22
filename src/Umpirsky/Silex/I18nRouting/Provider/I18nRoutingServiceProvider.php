@@ -19,7 +19,7 @@ use Silex\ServiceProviderInterface;
  *
  * @author Саша Стаменковић <umpirsky@gmail.com>
  */
-class I18nRoutingServiceProvider extends ServiceProviderInterface
+class I18nRoutingServiceProvider implements ServiceProviderInterface
 {
     public function register(Application $app)
     {

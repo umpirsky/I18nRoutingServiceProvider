@@ -1,0 +1,24 @@
+{
+    "minimum-stability": "dev",
+    "name": "umpirsky/i18n-routing-service-provider",
+    "description": "Silex i18n routing service provider.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Саша Стаменковић",
+            "email": "umpirsky@gmail.com"
+        }
+    ],
+    "require": {
+        "silex/silex": "1.0.*"
+    },
+    "require-dev": {
+        "symfony/translation": "2.1.*"
+    },
+    "suggest": {
+        "symfony/translation": "2.1.*"
+    },
+    "autoload": {
+        "psr-0": { "Umpirsky\\Silex\\I18nRouting": "src" }
+    }
+}

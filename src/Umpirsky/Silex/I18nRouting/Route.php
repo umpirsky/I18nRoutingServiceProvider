@@ -12,13 +12,14 @@
 namespace Umpirsky\Silex\I18nRouting;
 
 use Symfony\Component\Translation\TranslatorInterface;
+use Silex\Route as BaseRoute;
 
 /**
  * I18n Route.
  *
  * @author Саша Стаменковић <umpirsky@gmail.com>
  */
-class Route extends Silex\Route
+class Route extends BaseRoute
 {
     /**
      * @var TranslatorInterface
