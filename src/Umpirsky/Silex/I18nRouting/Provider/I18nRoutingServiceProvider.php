@@ -24,6 +24,7 @@ class I18nRoutingServiceProvider extends ServiceProviderInterface
     public function register(Application $app)
     {
         $app['route_class'] = 'Umpirsky\Silex\I18nRouting\Route';
+
         $app['route_factory'] = function () use ($app) {
             $route = new $app['route_class']();
             $route->setTranslator($app['translator']);

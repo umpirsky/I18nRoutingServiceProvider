@@ -28,7 +28,7 @@ class Route extends Silex\Route
     /**
      * @var string
      */
-    private $translatorDomain;
+    private $translatorDomain = 'routes';
 
     public function setTranslator(TranslatorInterface $translator)
     {
