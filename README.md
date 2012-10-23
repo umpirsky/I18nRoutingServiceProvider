@@ -1,4 +1,4 @@
-I18n Routing Service Provider
+I18n Routing Service Provider [![Build Status](https://secure.travis-ci.org/umpirsky/I18nRoutingServiceProvider.png)](http://travis-ci.org/umpirsky/I18nRoutingServiceProvider)
 =============================
 
 Silex i18n routing service provider.
