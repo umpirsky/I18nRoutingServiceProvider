@@ -26,7 +26,7 @@ class Application extends BaseApplication
             $this['translator']->trans(
                 $prefix,
                 array(),
-                isset($app['translator.domains.route']) ? $app['translator.domains.route'] : 'routes'
+                isset($this['translator.domains.route']) ? $this['translator.domains.route'] : 'routes'
             ),
             $app
         );
