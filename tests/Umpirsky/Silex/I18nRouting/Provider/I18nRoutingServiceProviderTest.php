@@ -41,7 +41,9 @@ class I18nRoutingServiceProviderTest extends \PHPUnit_Framework_TestCase
 
     public function testI18nRoutes()
     {
-        $this->app->get('/route', function () {});
+        $this->app->get('/route', function () {
+            return 'ok';
+        });
 
         $this->assertEquals(200, $this->app->handle(Request::create('/ruta'))->getStatusCode());
         $this->assertEquals(404, $this->app->handle(Request::create('/route'))->getStatusCode());
