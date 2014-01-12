@@ -41,12 +41,12 @@ class Route extends BaseRoute
         $this->translatorDomain = $domain;
     }
 
-    public function setPattern($pattern)
+    public function setPath($pattern)
     {
         if (null !== $this->translator) {
             $pattern = $this->translator->trans($pattern, array(), $this->translatorDomain);
         }
 
-        return parent::setPattern($pattern);
+        return parent::setPath($pattern);
     }
 }
